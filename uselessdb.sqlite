@@ -7,3 +7,8 @@ CREATE TABLE celebs (
 
 
  SELECT * FROM celebs;
+pour selectionner tout les donnees de celebs
+
+
+ALTER TABLE celebs
+ADD COLUMN twitter_handle NULL;
