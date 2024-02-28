@@ -12,3 +12,19 @@ pour selectionner tout les donnees de celebs
 
 ALTER TABLE celebs
 ADD COLUMN twitter_handle NULL;
+
+creer une nouvelle table avec ALTER
+
+
+DELETE FROM celebs
+WHERE twitter_handle IS NULL;
+supprimer et mettre des conditions sql
+
+
+CREATE TABLE awards (
+   id INTEGER PRIMARY KEY,
+   recipient TEXT NOT NULL,
+   award_name TEXT DEFAULT 'Grammy'
+);
+
+constraint(les contraintes en sql)
