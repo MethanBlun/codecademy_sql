@@ -43,3 +43,8 @@ DELETE FROM deletes rows from a table
 SELECT imdb_rating AS 'IMDb'
 FROM movies;
 //renommer des colonnes
+
+
+SELECT DISTINCT genre 
+FROM movies;
+//DISTINCT filtre en categories
