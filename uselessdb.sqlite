@@ -48,3 +48,11 @@ FROM movies;
 SELECT DISTINCT genre 
 FROM movies;
 //DISTINCT filtre en categories
+
+
+SELECT * FROM movies WHERE imdb_rating <5;
+//la condition where 
+
+
+SELECT * FROM  movies WHERE name LIKE 'Se_en';
+//like as comme
