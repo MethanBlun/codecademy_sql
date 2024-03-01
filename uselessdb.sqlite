@@ -73,3 +73,17 @@ BETWEEN 'D' AND  'G' ;
 
 SELECT * FROM movies WHERE year BETWEEN 1970 AND 1979 ;
 //l'operateur BETWEEN et AND
+
+
+SELECT * 
+FROM movies 
+WHERE  genre = 'horror' AND
+year < 1985  ;
+//again the and operator
+
+
+SELECT *
+FROM movies
+WHERE genre = 'comedy'
+   OR genre = 'romance';
+//operateur OR
