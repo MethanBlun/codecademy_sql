@@ -87,3 +87,9 @@ FROM movies
 WHERE genre = 'comedy'
    OR genre = 'romance';
 //operateur OR
+
+
+SELECT name, year , imdb_rating
+FROM movies
+ORDER BY imdb_rating DESC;
+//PAR ordre croissant (ASC) ou decroissant (DESC)
