@@ -56,3 +56,20 @@ SELECT * FROM movies WHERE imdb_rating <5;
 
 SELECT * FROM  movies WHERE name LIKE 'Se_en';
 //like as comme
+
+
+SELECT * 
+FROM movies
+WHERE name LIKE 'The %';
+//% pour trier ce qui commencent par the_ 
+%je% : ce qui contiennent je 
+
+
+SELECT name FROM movies WHERE imdb_rating IS NULL;
+//verifie si la valeur existe
+
+SELECT * FROM movies WHERE name 
+BETWEEN 'D' AND  'G' ;
+
+SELECT * FROM movies WHERE year BETWEEN 1970 AND 1979 ;
+//l'operateur BETWEEN et AND
