@@ -93,3 +93,10 @@ SELECT name, year , imdb_rating
 FROM movies
 ORDER BY imdb_rating DESC;
 //PAR ordre croissant (ASC) ou decroissant (DESC)
+
+
+SELECT * 
+FROM movies  
+ORDER BY imdb_rating DESC
+LIMIT 3; 
+//associate limit and order by
