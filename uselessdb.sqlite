@@ -109,3 +109,8 @@ SELECT name,
   ELSE 'Intense'
    END AS 'Mood'
   FROM movies;
+
+
+  SELECT COUNT(*)
+FROM fake_apps WHERE price = 0;
+//LA clause COUNT
