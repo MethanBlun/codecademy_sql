@@ -181,3 +181,15 @@ UNION
 SELECT *
 FROM online;
 //pour fusionner des tables entre elles , elles doivent avoir le meme nombre de column les memes types de donnees
+
+WITH previous_query AS (
+SELECT customer_id,
+       COUNT(subscription_id) AS 'subscriptions'
+FROM orders
+GROUP BY customer_id)
+SELECT customers.customer_name,
+previous_query.subscriptions
+FROM previous_query
+JOIN customers
+	ON customers.customer_id = previous_query.customer_id;
+//utilisation d'une table temporaire
