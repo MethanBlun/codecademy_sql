@@ -131,3 +131,21 @@ SELECT category, sum(downloads)
 FROM fake_apps 	 
 GROUP BY category;
 //group by affiche plusieurs requete en un pour eviter les repetitions inutiles 
+
+
+
+
+
+
+SELECT COUNT(id) 
+FROM newspaper;
+
+
+SELECT COUNT(id) 
+FROM online;
+
+SELECT COUNT (*)
+FROM newspaper
+JOIN online ON
+newspaper.id = online.id;
+//JOIN table whit join
