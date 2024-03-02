@@ -123,3 +123,11 @@ FROM fake_apps;
 SELECT ROUND(AVG(price),2)
 FROM fake_apps;
 //round pour arrondir(prend 2 parametres(column , integer[a combien de chiffres pres]))
+//AVG trouve la moyenne d'un column
+
+
+
+SELECT category, sum(downloads) 
+FROM fake_apps 	 
+GROUP BY category;
+//group by affiche plusieurs requete en un pour eviter les repetitions inutiles 
