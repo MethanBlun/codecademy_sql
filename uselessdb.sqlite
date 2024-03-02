@@ -114,3 +114,12 @@ SELECT name,
   SELECT COUNT(*)
 FROM fake_apps WHERE price = 0;
 //LA clause COUNT
+
+
+
+SELECT MAX(price)
+FROM fake_apps;
+
+SELECT ROUND(AVG(price),2)
+FROM fake_apps;
+//round pour arrondir(prend 2 parametres(column , integer[a combien de chiffres pres]))
